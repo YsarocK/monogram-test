@@ -1,0 +1,8 @@
+// Globals import
+@use './globals/app';
+@use './globals/fonts';
+
+// Tailwind use
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
