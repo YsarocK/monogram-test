@@ -23,7 +23,8 @@ module.exports = {
       '8xl': '13rem',
     },
     lineHeight: {
-      'base': "3.5rem"
+      'base': "3.5rem",
+      'title': "15rem"
     }
   },
   plugins: [],
