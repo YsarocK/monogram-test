@@ -35,6 +35,7 @@ module.exports = {
     },
     borderWidth: {
       '1': '1px',
+      '4': '4px',
     },
     extend: {
       dropShadow: {
@@ -55,8 +56,6 @@ module.exports = {
       },
       backgroundImage: {
         'sphere-gradient': 'radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 96.35%, rgba(255, 255, 255, 0.36) 100%), linear-gradient(50.94deg, #01A6DC 14.62%, #8801E4 54.03%, #F5CBE1 85.34%)',
-        'audit-card': 'linear-gradient(25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%)',
-        'border-gradient': 'radial-gradient(65.6% 145.73% at 90.52% 2.09%, rgba(255, 255, 255, 0.3) 2.08%, rgba(255, 255, 255, 0) 53.65%, rgba(123, 245, 93, 0.135) 100%)'
       }
     }
   },
