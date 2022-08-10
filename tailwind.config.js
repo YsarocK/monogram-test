@@ -30,6 +30,24 @@ module.exports = {
     },
     borderWidth: {
       '1': '1px',
+    },
+    extend: {
+      dropShadow: {
+        'white': [
+            '0 0 30px rgba(255, 255, 255, 0.58)',
+            '0 -35px 41px rgba(255, 255, 255, 0.41)',
+            '0 -91px 70px rgba(255, 255, 255, 0.51)',
+            '0 -164px 91px rgba(255, 255, 255, 0.31)',
+        ]
+      },
+      boxShadow: {
+        'white': [
+          '0px 0px 30px rgba(255, 255, 255, 0.58)',
+          '0px -35px 41px rgba(255, 255, 255, 0.41)',
+          '0px -91px 70px rgba(255, 255, 255, 0.51)',
+          '0px -164px 91px rgba(255, 255, 255, 0.31)'
+        ],
+      }
     }
   },
   plugins: [],
