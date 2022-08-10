@@ -14,9 +14,11 @@ module.exports = {
       }
     },
     colors: {
+      'white': "#fff",
       'orange': "#fdbf85",
       'violet': "#cb77a0",
-      'greyLight': "#757575"
+      'greyLight': "#757575",
+      'greyDark': "#151515"
     },
     fontSize: {
       'base': '1.8rem',
@@ -25,6 +27,9 @@ module.exports = {
     lineHeight: {
       'base': "3.5rem",
       'title': "15rem"
+    },
+    borderWidth: {
+      '1': '1px',
     }
   },
   plugins: [],

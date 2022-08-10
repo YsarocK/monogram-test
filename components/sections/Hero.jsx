@@ -1,17 +1,25 @@
 import Image from "next/image";
-import Title from "../common/Title";
+import Title from "../partials/Title";
 import PrimaryRectangle from '../../assets/img/hero__rectangle__primary.png'
 import SecondaryRectangle from '../../assets/img/hero__rectangle__secondary.png'
+import Mouse from '../../assets/svg/mouse.svg'
+import Line from '../../assets/svg/line.svg'
 
 export default function Hero() {
   return (
-    <div className="pt-60 flex relative">
+    <div className="pt-60 flex relative 2xl:container mx-auto">
       <div className="flex flex-col gap-16">
         <div className="flex gap-11">
           <Title Tag="h1" Text="jamstack" />
           <p className="leading-title gradient-text font-black text-8xl bg-gradient-to-r from-orange to-violet bg-clip-border [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">101</p>
         </div>
         <p className="pl-24 text-base max-w-[55rem] font-light text-greyLight leading-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit.</p>
+        <div className="flex flex-col mt-[4.8rem] pl-24 max-w-[55rem] items-center">
+          <div>
+            <Mouse />
+            <Line />
+          </div>
+        </div>
       </div>
       <div className="flex gap-x-[4.6rem] absolute right-0 top-[15rem]">
         <div className="pt-[17rem] relative z-10">
