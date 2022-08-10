@@ -1,13 +1,18 @@
 import DashedLines from "../partials/DashedLines";
 import Heart from '../../assets/svg/heart.svg'
 import ScoreIndicator from '../../assets/svg/score.svg'
+import Wall from '../../assets/svg/wall.svg'
 
 import styles from '../../styles/components/Audit.module.scss'
 
 export default function Audit() {
   return (
     <section className="flex flex-col items-center bg-greyDark relative mb">
-      <DashedLines />
+      <DashedLines/>
+      <div className="bg-white relative">
+        {/* Move this section from Markup.jsx so that the backdrop-filter applied on the green card works on it. */}
+        <Wall/>
+      </div>
       <div className="flex flex-col gap-[10rem] items-center py-[12rem] px-[8rem] mx-auto relative mt-[-8.5rem]">
         <div className={styles.card + " absolute top-0 left-0 right-0 mx-auto w-full h-full rounded-[6.8rem]"}></div>
         <h3 className="title text-center font-black text-8xl text-greenLight z-10">top audit scores</h3>

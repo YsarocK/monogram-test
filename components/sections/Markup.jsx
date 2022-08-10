@@ -2,7 +2,6 @@ import Image from "next/image";
 import Title from "../partials/Title";
 import PrimaryRectangle from '../../assets/img/markup__rectangle__primary.png'
 import SecondaryRectangle from '../../assets/img/markup__rectangle__secondary.png'
-import Wall from '../../assets/svg/wall.svg'
 
 export default function Markup() {
   return (
@@ -44,7 +43,6 @@ export default function Markup() {
           </div>
         </div>
       </div>
-      <Wall/>
     </section>
   )
 }
