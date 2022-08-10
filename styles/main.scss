@@ -2,6 +2,9 @@
 @use './globals/app';
 @use './globals/fonts';
 
+// Sections-related styles
+@use './sections/Audit';
+
 // Tailwind use
 @tailwind base;
 @tailwind components;

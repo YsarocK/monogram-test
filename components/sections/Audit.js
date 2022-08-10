@@ -3,9 +3,24 @@ import Heart from '../../assets/svg/heart.svg'
 import ScoreIndicator from '../../assets/svg/score.svg'
 import Wall from '../../assets/svg/wall.svg'
 
-import styles from '../../styles/components/Audit.module.scss'
+import { useEffect } from "react";
 
 export default function Audit() {
+
+  useEffect(() => {
+    const reveal = document.querySelectorAll('.reveal')
+    window.addEventListener('scroll', (e) => {
+      reveal.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          el.classList.add("active");
+        }
+      })
+    })
+  }, [])
+
   return (
     <section className="flex flex-col items-center bg-greyDark relative mb">
       <DashedLines/>
@@ -14,11 +29,11 @@ export default function Audit() {
         <Wall/>
       </div>
       <div className="flex flex-col gap-[10rem] items-center py-[12rem] px-[8rem] mx-auto relative mt-[-8.5rem]">
-        <div className={styles.card + " absolute top-0 left-0 right-0 mx-auto w-full h-full rounded-[6.8rem]"}></div>
+        <div className="card absolute top-0 left-0 right-0 mx-auto w-full h-full rounded-[6.8rem]"></div>
         <h3 className="title text-center font-black text-8xl text-greenLight z-10">top audit scores</h3>
-        <div className={styles.score + " flex justify-between gap-[6.7rem]"}>
+        <div className="score flex justify-between gap-[6.7rem]">
           {Array.from({ length: 4 }, (_, i) =>
-            <div className={styles.score__item + ' h-[20rem] w-[20rem] flex text-[6.3rem] font-bold relative'} key={i}>
+            <div className='score__item reveal h-[20rem] w-[20rem] flex text-[6.3rem] font-bold relative' key={i}>
               <ScoreIndicator  className={"absolute top-0 left-1/2 m-auto bottom-0 -translate-x-2/4 " + ((i + 1) === 3 ? 'opacity-30' : 'opacity-80') }  />
               <p className="m-auto">100</p>
             </div>
