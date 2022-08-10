@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from '../components/sections/Hero'
 import styles from '../styles/Home.module.scss'
+
+import Computer from '../components/sections/Computer'
+import Hero from '../components/sections/Hero'
+import Technos from '../components/sections/Technos'
 
 export default function Home() {
   return (
@@ -12,8 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="2xl:container mx-auto">
+      <main className="">
         <Hero/>
+        <Computer/>
+        <Technos/>
       </main>
 
       <footer className={styles.footer}>
