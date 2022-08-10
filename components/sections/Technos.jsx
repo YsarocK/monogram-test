@@ -7,9 +7,9 @@ import DashedLines from '../partials/DashedLines'
 
 export default function Technos() {
   return (
-    <section className="h-[230rem] bg-greyDark mt-[-55rem] relative">
+    <section className="bg-greyDark mt-[-55rem] relative">
       <DashedLines />
-      <div className="grid grid-cols-4 justify-center h-full absolute top-0 left-0 right-0 max-w-[128rem] mx-auto pt-[36rem]">
+      <div className="grid grid-cols-4 justify-center h-full max-w-[128rem] mx-auto pt-[36rem]">
         <div className="flex flex-col items-center pt-[25rem]">
           <ReactIcon className="h-[5.5rem] mb-[35.7rem] drop-shadow-white" />
           <SvelteIcon className="h-[5.5rem] opacity-40 drop-shadow-white" />

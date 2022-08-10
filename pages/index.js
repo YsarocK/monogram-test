@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import Api from '../components/sections/Api'
+import Audit from '../components/sections/Audit'
 import Computer from '../components/sections/Computer'
 import Hero from '../components/sections/Hero'
+import Markup from '../components/sections/Markup'
 import Technos from '../components/sections/Technos'
 
 import styles from '../styles/Home.module.scss'
@@ -18,6 +21,9 @@ export default function Home() {
         <Hero/>
         <Computer/>
         <Technos/>
+        <Api />
+        <Markup />
+        <Audit />
       </main>
 
       <footer className={styles.footer}>
