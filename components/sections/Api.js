@@ -26,8 +26,11 @@ export default function Api() {
             {/* White part, absolute to be able taking full screen width & taking 50% of the parent (the circle) */}
             <div className="w-screen h-auto absolute left-2/4 top-2/4 bottom-0 z-10 mx-auto -translate-x-2/4">
               <div className="relative w-full h-full">
-                {/* The wave is just put on top of a 50% height white part. It assures this smooth transition. */}
-                <Splitter className="absolute -translate-y-full" />
+                {/* 
+                  The wave is just put on top of a 50% height white part. It assures this smooth transition by translating it of 99% & not 100%.
+                  It lets some pixels common between the two parts.
+                */}
+                <Splitter className="absolute -translate-y-[99%]" />
                 <div className="w-full h-full bg-white"></div>
               </div>
             </div>
