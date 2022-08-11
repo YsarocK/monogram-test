@@ -32,7 +32,7 @@ export default function Audit() {
 
       <div className="flex flex-col gap-[10rem] items-center py-[8rem] lg:py-[12rem] px-[8rem] mx-auto relative mt-[-8.5rem]">
         {/* The w-[calc(100%-6rem)] underneath is to handle the side space on mobile as it's absolute postionned. */}
-        <div className="card absolute top-0 left-0 right-0 mx-auto w-[calc(100%-6rem)] lg:w-full h-full rounded-[6.8rem]"></div>
+        <div className="card absolute top-0 left-0 right-0 mx-auto w-[calc(100%-6rem)] 2xl:w-full h-full rounded-[6.8rem]"></div>
         <h3 className="text-center font-black text-[3.5rem] sm:text-[5rem] lg:text-8xl text-greenLight z-10 leading-[1]">top audit scores</h3>
         <div className="score grid grid-cols-2 lg:grid-cols-4 gap-[6.7rem]">
           {/* I generate the four circles  */}

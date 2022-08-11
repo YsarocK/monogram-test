@@ -20,6 +20,7 @@ export default function Markup() {
             <div className="absolute w-[32rem] h-[5.7rem] rounded-lg bg-blocYellow right-[-10rem] top-[25rem] rotate-[-58.55deg]"></div>
           </div>
         </div>
+        {/* Decided to hide the cards on mobile. Too color for a small devices (personal point of vue, I agree). */}
         <div className="hidden z-[-1] lg:flex gap-x-[4.6rem] absolute right-0">
           <div className="pt-[17rem] relative z-10">
             <Image
