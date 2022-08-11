@@ -6,7 +6,7 @@ import SecondaryRectangle from '../../assets/img/markup__rectangle__secondary.pn
 export default function Markup() {
   return (
     <section className="flex flex-col items-center relative">
-      <div className="flex 2xl:container mx-auto relative">
+      <div className="flex 2xl:container px-24 mx-auto relative">
         <div className="flex flex-col gap-16">
           <div className="flex gap-11">
             <Title Tag="h1" Text="markup" />

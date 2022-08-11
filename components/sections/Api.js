@@ -11,14 +11,14 @@ export default function Api() {
       <DashedLines/>
       <div className="z-10">
         <Title Tag="h2" Text="api" className="text-white text-center"/>
-        <p className="mx-auto mt-[6rem] mb-[9.6rem] text-base text-center max-w-[55rem] font-light text-white leading-base">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
+        <p className="mx-auto px-[6rem] lg:px-0 mt-[6rem] mb-[9.6rem] text-base text-center max-w-[55rem] font-light text-white leading-base">At build time, a Jamstack website uses data from one or more APIs to generate markup. These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!</p>
         <div>
-          <div className="w-[91rem] h-[91rem] relative">
+          <div className="w-[35rem] lg:w-[91rem] h-[35rem] lg:h-[91rem] relative mx-auto">
             <div className="w-full h-full flex items-center justify-center bg-sphere-gradient rounded-[100%] absolute top-0 z-20 overflow-hidden	">
               <div className="w-full min-w-[110%] h-full flex items-center justify-between rotate-[-27.91deg] mix-blend-color-dodge">
-                <Prismic />
-                <Supabase />
-                <Prismic />
+                <Prismic className="w-[7rem] lg:w-[20rem]" />
+                <Supabase className="w-[20rem] lg:w-[37rem]" />
+                <Prismic className="w-[7rem] lg:w-[20rem]" />
               </div>
             </div>
             <div className="w-full h-full bg-white rounded-[100%] blur-[100px] -translate-x-12 -translate-y-12"></div>
