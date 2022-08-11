@@ -27,7 +27,7 @@ export default function Hero() {
             src={PrimaryRectangle}
             alt="Hero Abstract Rectangle"
             width={280}
-            height={629}
+            height={670}
             layout="fixed"
           />
           <div className="w-[28rem] h-[47rem] absolute top-[48rem] left-[16.4rem] rounded-[6.8rem] z-1 [backdrop-filter:blur(12rem)]"></div>
@@ -37,7 +37,7 @@ export default function Hero() {
             src={SecondaryRectangle}
             alt="Hero Abstract Rectangle"
             width={278}
-            height={629}
+            height={670}
             layout="fixed"
           />
           <div className="w-[28rem] h-[66rem] absolute top-[30rem] left-[15.8rem] rounded-[6.8rem] [backdrop-filter:blur(12rem)]"></div>
