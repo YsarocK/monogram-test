@@ -24,14 +24,16 @@ export default function Audit() {
   return (
     <section className="flex flex-col items-center bg-greyDark relative mb">
       <DashedLines/>
-      <div className="bg-white relative">
-        {/* Moved this section from Markup.js so that the backdrop-filter applied on the green card works on it. */}
-        <Wall className="w-[192rem]"/>
+
+      {/* Moved this section from Markup.js so that the backdrop-filter applied on the green card works on it. */}
+      <div className="bg-white relative w-full overflow-hidden flex justify-center">
+        <Wall className="min-w-[192rem]"/>
       </div>
-      <div className="flex flex-col gap-[10rem] items-center py-[12rem] px-[8rem] mx-auto relative mt-[-8.5rem]">
+
+      <div className="flex flex-col gap-[10rem] items-center py-[8rem] lg:py-[12rem] px-[8rem] mx-auto relative mt-[-8.5rem]">
         {/* The w-[calc(100%-6rem)] underneath is to handle the side space on mobile as it's absolute postionned. */}
         <div className="card absolute top-0 left-0 right-0 mx-auto w-[calc(100%-6rem)] lg:w-full h-full rounded-[6.8rem]"></div>
-        <h3 className="text-center font-black text-8xl text-greenLight z-10 leading-[1]">top audit scores</h3>
+        <h3 className="text-center font-black text-[5rem] lg:text-8xl text-greenLight z-10 leading-[1]">top audit scores</h3>
         <div className="score grid grid-cols-2 lg:grid-cols-4 gap-[6.7rem]">
           {/* I generate the four circles  */}
           {Array.from({ length: 4 }, (_, i) =>
