@@ -37,7 +37,7 @@ export default function Audit() {
         <div className="score grid grid-cols-2 lg:grid-cols-4 gap-[6.7rem]">
           {/* I generate the four circles  */}
           {Array.from({ length: 4 }, (_, i) =>
-            <div className='score__item reveal h-full lg:h-[21rem] w-full lg:w-[21rem] flex justify-center text-[3rem] lg:text-[6.3rem] font-bold p-[2rem] lg:p-0 relative' key={i}>
+            <div className='score__item reveal h-fit lg:h-[21rem] w-full lg:w-[21rem] flex justify-center text-[3rem] lg:text-[6.3rem] font-bold p-[2rem] lg:p-0 relative' key={i}>
               <ScoreIndicator className={"w-[210%] max-w-[33rem] absolute top-0 left-1/2 m-auto bottom-0 -translate-x-2/4 " + ((i + 1) === 3 ? 'opacity-30' : 'opacity-80') }  />
               <p className="m-auto">100</p>
             </div>
