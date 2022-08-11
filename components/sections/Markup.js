@@ -11,7 +11,7 @@ export default function Markup() {
           <div className="flex gap-11">
             <Title Tag="h1" Text="markup" />
           </div>
-          <p className="text-[2.4rem] max-w-[48rem] font-normal text-[#414141] leading-base text-center lg:text-left">
+          <p className="text-[2rem] sm:text-[2.4rem] max-w-[48rem] font-normal text-[#414141] leading-base text-center lg:text-left">
             When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website. The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN like Vercel’s Edge Network.
           </p>
           <div className="relative w-full mt-[8rem] h-[50rem]">
