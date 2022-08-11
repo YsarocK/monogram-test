@@ -30,7 +30,7 @@ export default function Hero() {
             height={670}
             layout="fixed"
           />
-          <div className="w-[28rem] h-[47rem] absolute top-[48rem] left-[16.4rem] rounded-[6.8rem] z-1 [backdrop-filter:blur(12rem)]"></div>
+          <div className="w-[28rem] h-[47rem] absolute top-[48rem] left-[16.4rem] rounded-[6.8rem] z-1 [backdrop-filter:blur(12rem)] [background:rgba(255,255,255,0.5)]"></div>
         </div>
         <div className="relative">
           <Image
@@ -40,7 +40,7 @@ export default function Hero() {
             height={670}
             layout="fixed"
           />
-          <div className="w-[28rem] h-[66rem] absolute top-[30rem] left-[15.8rem] rounded-[6.8rem] [backdrop-filter:blur(12rem)]"></div>
+          <div className="w-[28rem] h-[66rem] absolute top-[30rem] left-[15.8rem] rounded-[6.8rem] [backdrop-filter:blur(12rem)] [background:rgba(255,255,255,0.5)]"></div>
         </div>
       </div>
     </section>
