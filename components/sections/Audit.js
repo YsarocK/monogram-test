@@ -51,7 +51,7 @@ export default function Audit() {
       </div>
       <div className="flex flex-col items-center gap-[3.5rem] my-[15rem] relative">
         <p className="text-white px-[6rem] text-[1.5rem] lg:text-[2.4rem] text-center">This is a design test by Etienne Moureton for Monogram.</p>
-        <Heart />
+        <Heart className="heart" />
       </div>
     </section>
   )
