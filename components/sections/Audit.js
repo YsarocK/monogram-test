@@ -1,14 +1,15 @@
+import { useEffect } from "react";
+
 import DashedLines from "../partials/DashedLines";
 import Heart from '../../assets/svg/heart.svg'
 import ScoreIndicator from '../../assets/svg/score.svg'
 import Wall from '../../assets/svg/wall.svg'
 
-import { useEffect } from "react";
-
 export default function Audit() {
 
   useEffect(() => {
-    const reveal = document.querySelectorAll('.reveal')
+    // Animation init for the four scores circles
+    const reveal = document.querySelectorAll('.score__item.reveal')
     window.addEventListener('scroll', (e) => {
       reveal.forEach((el) => {
         const windowHeight = window.innerHeight;
