@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Title from "../partials/Title";
 import PrimaryRectangle from '../../assets/svg/markup__rectangle__primary.svg'
 import SecondaryRectangle from '../../assets/svg/markup__rectangle__secondary.svg'

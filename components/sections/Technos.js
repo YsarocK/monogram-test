@@ -4,7 +4,6 @@ import NextIcon from '../../assets/svg/technos/next.svg'
 import SvelteIcon from '../../assets/svg/technos/svelte.svg'
 import DashedLines from '../partials/DashedLines'
 
-
 export default function Technos() {
   return (
     <section className="bg-greyDark my-[-1rem] pb-[1rem] relative z-10">
