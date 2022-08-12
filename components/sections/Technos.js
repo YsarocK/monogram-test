@@ -7,7 +7,7 @@ import DashedLines from '../partials/DashedLines'
 
 export default function Technos() {
   return (
-    <section className="bg-greyDark mb-[-1rem] pb-[1rem] relative z-10">
+    <section className="bg-greyDark my-[-1rem] pb-[1rem] relative z-10">
       <DashedLines />
       <div className="grid grid-cols-4 justify-center h-full max-w-[128rem] mx-auto">
         <div className="flex flex-col items-center pt-[7.5rem] md:pt-[25rem]">
