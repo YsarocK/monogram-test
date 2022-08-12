@@ -1,7 +1,6 @@
-import Image from "next/image";
 import Title from "../partials/Title";
-import PrimaryRectangle from '../../assets/img/hero__rectangle__primary.png'
-import SecondaryRectangle from '../../assets/img/hero__rectangle__secondary.png'
+import PrimaryRectangle from '../../assets/svg/hero__rectangle__primary.svg'
+import SecondaryRectangle from '../../assets/svg/hero__rectangle__secondary.svg'
 import Mouse from '../../assets/svg/mouse.svg'
 import Line from '../../assets/svg/line.svg'
 
@@ -22,25 +21,13 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex gap-x-[4.6rem] absolute top-[5rem] lg:top-[15rem] opacity-20 lg:opacity-100 z-[-1] lg:z-1 mx-auto lg:left-auto lg:right-0">
-        <div className="pt-[17rem] relative z-10">
-          <Image
-            src={PrimaryRectangle}
-            alt="Hero Abstract Rectangle"
-            width={280}
-            height={670}
-            layout="fixed"
-          />
-          <div className="w-[28rem] h-[47rem] absolute top-[48rem] left-[16.4rem] rounded-[6.8rem] z-1 [backdrop-filter:blur(12rem)]"></div>
+        <div className="mt-[17rem] relative z-10 w-[28rem] h-[63rem]">
+          <PrimaryRectangle />
+          <div className="w-[28rem] h-[47rem] absolute top-[30rem] left-[16.4rem] rounded-[6.8rem] z-1 [backdrop-filter:blur(12rem)] [background:rgba(255,255,255,0.5)]"></div>
         </div>
-        <div className="relative">
-          <Image
-            src={SecondaryRectangle}
-            alt="Hero Abstract Rectangle"
-            width={278}
-            height={670}
-            layout="fixed"
-          />
-          <div className="w-[28rem] h-[66rem] absolute top-[30rem] left-[15.8rem] rounded-[6.8rem] [backdrop-filter:blur(12rem)]"></div>
+        <div className="relative w-[28rem] h-[66rem]">
+          <SecondaryRectangle />
+          <div className="w-[28rem] h-[66rem] absolute top-[30rem] left-[15.8rem] rounded-[6.8rem] [backdrop-filter:blur(12rem)] [background:rgba(255,255,255,0.5)]"></div>
         </div>
       </div>
     </section>
